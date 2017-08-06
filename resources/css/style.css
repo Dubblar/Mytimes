@@ -1,26 +1,32 @@
+body {
+  margin: 0px;
+  border: 0;
+}
+
 header {
   display: flex;
   font-family: verdana;
   font-size: 14px;
   font-weight: bold;
-  width: 100%
+  width: 100%;
   align-items: center;
   border-bottom: 1px solid darkblue;
-
-
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  height: 80px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  padding-left: 30px;
   flex-grow: 1;
-  border: 1px solid black;
+  padding-left: 30px;
   margin-bottom: 5px;
 }
 
 .logo img {
-  padding: 10px 5px;
+  padding: 0px 5px;
 }
 
 .logo span {
@@ -28,32 +34,41 @@ header {
 }
 
 a {
+  margin-top: 0px;
   color: black;
 }
 
 nav span {
   display: inline-block;
-  padding: 20px 10px;
+  padding: 0px 10px;
 }
 
- header nav {
-   padding-right: 40px;
- }
+header nav {
+  padding-right: 40px;
+}
 
  main {
    display: flex;
    padding-top: 5px;
-   border: 1px solid black;
    width: 1250px;
    margin: auto;
-
-
+   font-family: Georgia;
+   color: black;
+   position: relative;
+   top: 80px;
  }
 
-main article {
-  border: 2px solid black;
-}
+ main p {
+   font-size: 17px;
+ }
 
+.imgur span {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  font-weight: bold;
+}
 .column {
   display: flex;
   flex-direction: column;
@@ -61,34 +76,30 @@ main article {
 }
 
  .column.large {
-
    width: 630px;
-   border: 1px solid black;
-
  }
-
 
  .column.medium {
-
    width: 300px;
-   border: 1px solid black;
  }
 
-
 .column.small {
-
   width: 240px;
-  border: 1px solid black;
 }
 
-.img {
+.imgur {
   display: flex;
-  height: 200px;
-  color:white;
+  height: 300px;
 
 }
 
-.main {
+#mainstory {
+  text-align: left;
+  font-size: 40px;
+}
+
+
+.mainish {
   background-image:url(../mainstory.png);
 
 }
@@ -100,8 +111,41 @@ main article {
 
 .camera {
   background-image:url(../camera.png);
+
 }
 
 .cat {
   background-image:url(../cat.png);
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.orca {
+  height: 250px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bites {
+  display: block;
+  background-color: whitesmoke;
+  font-family: verdana;
+  font-size: 12px;
+  color: dimgray;
+  border-bottom: solid 1px black;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
 }
